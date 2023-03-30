@@ -1,5 +1,16 @@
+* {
+  margin: 0;
+  line-height: calc(1em + 0.5rem);
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
 body {
-    /* This margin just makes the text easier to read. You can remove it if you want since it can mess with your other styles. */
+  font-family: 'General Sans', sans-serif;
+  height: 100%;
   }
   
   body::before {
@@ -16,7 +27,7 @@ body {
   .box {
     background-color: lightblue;
     border: 1px solid blue;
-    min-height: 50px;
+    min-height: 400px;
     font-size: 2rem;
   }
   
@@ -52,17 +63,12 @@ body {
 
 .navbar {
   background-color: rgb(38, 85, 69);
-  border-bottom: 1px solid black;
+  
 }
 
 #headerBanner{
   background-color: rgb(83, 187, 152);
-  border-bottom: 1px solid black;
   margin-bottom: 10px;
-}
-
-#margins {
-  border-right: 1px solid black;
 }
 
 .list-inline {
@@ -74,4 +80,69 @@ body {
   flex: 3;
 
   text-align: center;
+  white-space: nowrap;
+}
+
+.btn {
+  display: inline-block;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: -0.05em;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+}
+
+.btn:before {
+  content: '';
+  background: #1bc740;
+  position: absolute;
+  width: 0%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transition: 0.3s linear;
+  z-index: -1;
+}
+.btn:hover:before {
+  width: 100%;
+}
+
+#centerBanner {
+  padding-bottom: 20px;
+  border-bottom: 2px solid gray;
+}
+
+#Notification {
+  padding-bottom: 20px;
+  border-bottom: 2px solid gray;
+}
+
+#titulosPag {
+  color: #008C1C;
+  -webkit-text-stroke: 1px #000;
+}
+
+.card{
+  width: 300px;
+  height: 450px;
+}
+
+.card-text{
+  overflow: hidden;
+}
+
+.card-subtitle {
+  color: rgb(121, 121, 121);
+  padding: 4px;
+}
+
+.card-link{
+  text-decoration: none;
+  align-items: flex-end;
+}
+
+.card-img-top{
+  width: 280px;
+  overflow:hidden;
+  object-position: 0 0 20px;
 }
