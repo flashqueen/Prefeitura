@@ -1,5 +1,5 @@
 body {
-    margin-top: 40px; /* This margin just makes the text easier to read. You can remove it if you want since it can mess with your other styles. */
+    /* This margin just makes the text easier to read. You can remove it if you want since it can mess with your other styles. */
   }
   
   body::before {
@@ -51,6 +51,27 @@ body {
   }
 
 .navbar {
-  background-color: aquamarine;
+  background-color: rgb(38, 85, 69);
+  border-bottom: 1px solid black;
+}
+
+#headerBanner{
+  background-color: rgb(83, 187, 152);
+  border-bottom: 1px solid black;
   margin-bottom: 10px;
+}
+
+#margins {
+  border-right: 1px solid black;
+}
+
+.list-inline {
+  display: flex;
+  width: 100%;
+}
+
+.list-inline li {
+  flex: 3;
+
+  text-align: center;
 }
