@@ -8,21 +8,21 @@ html {
   height: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: rgb(38, 85, 69);
+  font-weight: 600;
+}
+
+li {
+  font-weight: 500;
+}
+
 body {
   font-family: 'General Sans', sans-serif;
   height: 100%;
   background-color: rgb(230, 230, 230);
   overflow-x: hidden;
-  }
-  
-  body::before {
-    content: "XS";
-    color: red;
-    font-size: 2rem;
-    font-weight: bold;
-    position: fixed;
-    top: 0;
-    right: 0;
   }
   
   /* This box class is purely used for explaining how the bootstrap grid system works. */
@@ -31,36 +31,6 @@ body {
     border: 1px solid blue;
     min-height: 400px;
     font-size: 2rem;
-  }
-  
-  @media (min-width: 576px) {
-    body::before {
-      content: "SM";
-    }
-  }
-  
-  @media (min-width: 768px) {
-    body::before {
-      content: "MD";
-    }
-  }
-  
-  @media (min-width: 992px) {
-    body::before {
-      content: "LG";
-    }
-  }
-  
-  @media (min-width: 1200px) {
-    body::before {
-      content: "XL";
-    }
-  }
-  
-  @media (min-width: 1400px) {
-    body::before {
-      content: "XXL";
-    }
   }
 
 .navbar {
@@ -111,12 +81,18 @@ body {
 #titulosPag {
   color: #008C1C;
   -webkit-text-stroke: 1px #000;
+  font-style: italic;
 }
 
 .card{
   width: 300px;
   height: 450px;
   background-color: rgb(250, 250, 250);
+  transition: all 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card-text{
@@ -142,4 +118,5 @@ body {
 #foot{
   background-color: rgb(83, 187, 152);
   color: #fff;
+  font-size: larger;
 }
