@@ -3,43 +3,37 @@
     line-height: calc(1em + 0.5rem);
   }
   
-  html {
+html {
     scroll-behavior: smooth;
     height: 100%;
   }
   
-  body {
+body {
     font-family: 'General Sans', sans-serif;
     height: 100%;
     background-color: rgb(230, 230, 230);
     overflow-x: hidden;
     }
-    
-    body::before {
-      content: "XS";
-      color: red;
-      font-size: 2rem;
-      font-weight: bold;
-      position: fixed;
-      top: 0;
-      right: 0;
-    }
 
-    article {
+article {
         font-size: 24px;
       }
 
-    a {
+a {
         text-decoration: none;
         color: rgb(38, 85, 69);
         font-weight: 600;
       }
+
+li {
+        font-weight: 500;
+    }
     
-    h1{
+h1{
         font-weight: 800;
     }
 
-    h5{
+h5{
         font-weight: 700;
     }
     
@@ -49,36 +43,6 @@
       border: 1px solid blue;
       min-height: 400px;
       font-size: 2rem;
-    }
-    
-    @media (min-width: 576px) {
-      body::before {
-        content: "SM";
-      }
-    }
-    
-    @media (min-width: 768px) {
-      body::before {
-        content: "MD";
-      }
-    }
-    
-    @media (min-width: 992px) {
-      body::before {
-        content: "LG";
-      }
-    }
-    
-    @media (min-width: 1200px) {
-      body::before {
-        content: "XL";
-      }
-    }
-    
-    @media (min-width: 1400px) {
-      body::before {
-        content: "XXL";
-      }
     }
   
   .navbar {
@@ -133,7 +97,11 @@
   .flex-row {
     background-color: rgb(230, 230, 230);
     border: none;
-    
+    transition: all 0.3s;
+  }
+
+  .flex-row:hover {
+    transform: scale(1.04);
   }
 
   .card-text{
@@ -174,7 +142,7 @@
   }
 
   .card-img-left {
-    width: 100%;
+    max-width: 100%;
     height: 3em;
     max-height: 10em;
     object-fit: contain;
