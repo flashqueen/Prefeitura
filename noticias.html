@@ -15,7 +15,7 @@
       crossorigin="anonymous"
     />
     <title>Bootstrap</title>
-    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="styles/notices.css" />
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
@@ -23,6 +23,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
@@ -63,9 +64,7 @@
               >
             </li>
             <li class="nav-item">
-              <a href="/noticias.html" class="nav-link"
-                ><strong>Notícias</strong></a
-              >
+              <a href="#" class="nav-link"><strong>Notícias</strong></a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link disabled"><strong>Serdin</strong></a>
@@ -130,139 +129,147 @@
         </div>
       </div>
     </nav>
-    <div class="container d-flex flex-column mb-3" id="centerBanner">
-      <div class="row flex-grow-3 g-3">
-        <div class="col">
-          <div class="box"></div>
-        </div>
-      </div>
-    </div>
-    <div class="container mb-3" id="Notification">
-      <h1 class="flex justify-center" id="titulosPag">Notícias</h1>
-      <div
-        class="row row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-3"
-      >
-        <div class="col">
-          <div class="card shadow">
-            <img class="card-img-top mx-auto" src="imgs/unonot1.jpg" />
-            <div class="card-body">
-              <h4 class="card-title">Lorem ipsum dolor sit.</h4>
-              <h6 class="card-subtitle text-muted">
-                Lorem ipsum dolor sit amet consectetur.
-              </h6>
-              <div class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
-                reprehenderit!...
+    <div class="container flexbox">
+      <div class="row row-cols-lg-2">
+        <div class="col-lg-8 col-md-12">
+          <h1>Título da Notícia!</h1>
+          <small class="path"
+            >Início > Notícias > Templo Oak > Serdínia em apuros!</small
+          >
+          <div class="card">
+            <article class="card-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              beatae magnam quo veritatis aliquid numquam harum minus natus
+              nemo, quibusdam voluptatibus nesciunt ducimus exercitationem
+              facere excepturi, at commodi
+              <strong>soluta nam?</strong> Praesentium excepturi minima odio,
+              aliquam expedita nam veniam eum ullam rerum necessitatibus? Sunt
+              voluptates velit distinctio rerum ipsum illo mollitia!
+            </article>
+            <img src="/imgs/templo_oak.webp" class="noticiaCentral" />
+            <article class="card-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              beatae magnam quo veritatis aliquid numquam harum minus natus
+              nemo, quibusdam voluptatibus nesciunt ducimus exercitationem
+              facere excepturi, at commodi
+              <strong>soluta nam?</strong> Praesentium excepturi minima odio,
+              aliquam expedita nam veniam eum ullam rerum necessitatibus? Sunt
+              voluptates velit distinctio rerum ipsum illo mollitia!
+              <blockquote class="blockquote">
+                <p>
+                  "Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Repellendus corrupti, repudiandae voluptatum reprehenderit
+                  autem animi."
+                </p>
+                <footer class="blockquote-footer">
+                  Morador da cidade de Serdínia
+                </footer>
+              </blockquote>
+            </article>
+            <article class="card-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              beatae magnam quo veritatis aliquid numquam harum minus natus
+              nemo, quibusdam voluptatibus nesciunt ducimus exercitationem
+              facere excepturi, at commodi
+              <strong>soluta nam?</strong> Praesentium excepturi minima odio,
+              aliquam expedita nam veniam eum ullam rerum necessitatibus? Sunt
+              voluptates velit distinctio rerum ipsum illo mollitia.
+            </article>
+            <div class="infoNotice container">
+              <div class="item1">
+                <small>Publicado dia 31/03/2023</small>
               </div>
-              <a href="/noticias.html" class="card-link">Saiba Mais...</a>
+              <div class="item2">
+                <small>Autor da Publicação: Jornalista Serdiniano</small>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card shadow">
-            <img class="card-img-top mx-auto" src="imgs/arme1.png" />
-            <div class="card-body">
-              <h4 class="card-title">Lorem ipsum dolor sit.</h4>
-              <h6 class="card-subtitle">Lorem ipsum dolor sit amet.</h6>
-              <div class="card-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga
-                perspiciatis quibusdam molestias.
-              </div>
-              <a href="/noticias.html" class="card-link">Saiba Mais...</a>
+
+        <div class="col-lg-4 col-md-12 second">
+          <h4>Notícias Relacionadas</h4>
+          <div class="card flex-row mb-2">
+            <div class="card-header border-0">
+              <img class="card-img-left" src="/imgs/brasão(1).png" />
+            </div>
+            <div class="card-block px-2">
+              <a href="/" class="card-title lateralNotice"
+                >Lorem ipsum dolor elit aaaaaaaaaaa</a
+              >
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card shadow">
-            <img class="card-img-top mx-auto" src="imgs/unonot1.jpg" />
-            <div class="card-body">
-              <h4 class="card-title">Lorem ipsum dolor sit.</h4>
-              <h6 class="card-subtitle">Lorem ipsum dolor sit amet.</h6>
-              <div class="card-text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repudiandae, possimus.
-              </div>
-              <a href="/noticias.html" class="card-link">Saiba Mais...</a>
+          <div class="card flex-row mb-2">
+            <div class="card-header border-0">
+              <img class="card-img-left" src="/imgs/arme1.png" />
+            </div>
+            <div class="card-block px-2">
+              <a href="/" class="card-title lateralNotice"
+                >Lorem ipsum dolor elit aaaaaaaaaaa</a
+              >
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card shadow">
-            <img class="card-img-top mx-auto" src="imgs/arme1.png" />
-            <div class="card-body">
-              <h4 class="card-title">Lorem, ipsum dolor.</h4>
-              <h6 class="card-subtitle">
-                Lorem ipsum dolor sit amet consectetur.
-              </h6>
-              <div class="card-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Aliquam, ad corrupti aut beatae facere esse?
-              </div>
-              <a href="/noticias.html" class="card-link">Saiba Mais...</a>
+          <div class="card flex-row mb-2">
+            <div class="card-header border-0">
+              <img class="card-img-left" src="/imgs/brasão(1).png" />
+            </div>
+            <div class="card-block px-2">
+              <a href="/" class="card-title lateralNotice"
+                >Lorem ipsum dolor elit aaaaaaaaaaa</a
+              >
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card shadow">
-            <img class="card-img-top mx-auto" src="imgs/arme1.png" />
-            <div class="card-body">
-              <h4 class="card-title">Lorem ipsum dolor sit.</h4>
-              <h6 class="card-subtitle text-muted">
-                Lorem ipsum dolor sit amet.
-              </h6>
-              <div class="card-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Aliquam, dicta numquam soluta iste in quisquam vero!
-              </div>
-              <a href="/noticias.html" class="card-link">Saiba Mais...</a>
+          <div class="card flex-row mb-5">
+            <div class="card-header border-0">
+              <img class="card-img-left" src="/imgs/arme1.png" />
+            </div>
+            <div class="card-block px-2">
+              <a href="/" class="card-title lateralNotice"
+                >Lorem ipsum dolor elit aaaaaaaaaaa</a
+              >
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card shadow">
-            <img class="card-img-top mx-auto" src="imgs/unonot1.jpg" />
-            <div class="card-body">
-              <h4 class="card-title">Lorem, ipsum.</h4>
-              <h6 class="card-subtitle text-muted">Lorem ipsum dolor sit.</h6>
-              <div class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
-                reprehenderit!...
-              </div>
-              <a href="/noticias.html" class="card-link">Saiba Mais...</a>
+          <h4>Últimas Notícias</h4>
+          <div class="card flex-row mb-2">
+            <div class="card-header border-0">
+              <img class="card-img-left" src="/imgs/brasão(1).png" />
+            </div>
+            <div class="card-block px-2">
+              <a href="/" class="card-title lateralNotice"
+                >Lorem ipsum dolor elit aaaaaaaaaaa</a
+              >
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card shadow">
-            <img class="card-img-top mx-auto" src="imgs/arme1.png" />
-            <div class="card-body">
-              <h4 class="card-title">Lorem, ipsum dolor.</h4>
-              <h6 class="card-subtitle text-muted">
-                Lorem ipsum dolor sit amet.
-              </h6>
-              <div class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
-                reprehenderit!...
-              </div>
-              <a href="/noticias.html" class="card-link">Saiba Mais...</a>
+          <div class="card flex-row mb-2">
+            <div class="card-header border-0">
+              <img class="card-img-left" src="/imgs/arme1.png" />
+            </div>
+            <div class="card-block px-2">
+              <a href="/" class="card-title lateralNotice"
+                >Lorem ipsum dolor elit aaaaaaaaaaa</a
+              >
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card shadow">
-            <img class="card-img-top mx-auto" src="imgs/unonot1.jpg" />
-            <div class="card-body">
-              <h4 class="card-title">
-                Lorem ipsum dolor sit amet consectetur.
-              </h4>
-              <h6 class="card-subtitle text-muted">Lorem ipsum dolor sit.</h6>
-              <div class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
-                reprehenderit!...
-              </div>
-              <a href="/noticias.html" class="card-link">Saiba Mais...</a>
+          <div class="card flex-row mb-2">
+            <div class="card-header border-0">
+              <img class="card-img-left" src="/imgs/brasão(1).png" />
+            </div>
+            <div class="card-block px-2">
+              <a href="/" class="card-title lateralNotice"
+                >Lorem ipsum dolor elit aaaaaaaaaaa</a
+              >
             </div>
           </div>
+          <div class="card flex-row mb-2">
+            <div class="card-header border-0">
+              <img class="card-img-left" src="/imgs/arme1.png" />
+            </div>
+            <div class="card-block px-2">
+              <a href="/" class="card-title lateralNotice"
+                >Lorem ipsum dolor elit aaaaaaaaaaa</a
+              >
+            </div>
+          </div>
+          <a href="/" class="late"> Todas as Notícias</a>
         </div>
       </div>
     </div>
