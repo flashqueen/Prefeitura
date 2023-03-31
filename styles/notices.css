@@ -16,7 +16,7 @@ body {
     }
 
 article {
-        font-size: 24px;
+        font-size: 16px;
       }
 
 a {
@@ -132,7 +132,7 @@ h5{
   }
 
   .blockquote {
-    padding: 1em;
+    padding-top: 2em;
   }
 
   .infoNotice{
